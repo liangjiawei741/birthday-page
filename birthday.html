@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { 
+            background: #ffe6e6; 
+            text-align: center; 
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="message" id="randomMessage"></div>
+
+    <script>
+        // 五版祝福文案（可直接修改文字）
+        const messages = [
+            `【活力运动版】<br><br>🎉生日快乐，我的全能MVP！<br>愿你在篮球场上三分稳如虎...（此处替换为完整文案）`,
+            `【游戏热血版】<br><br>🔥Happy Birthday，兄弟！<br>今天你才是真正的...`,
+            // 继续粘贴其他三个版本的文案
+        ];
+
+        // 随机选择并显示
+        const randomIndex = Math.floor(Math.random() * messages.length);
+        document.getElementById('randomMessage').innerHTML = messages[randomIndex];
+    </script>
+</body>
+</html>
